@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacanze</title>
+</head>
+<body>
+
+    <header class="titolo">
+        <h1>Calcolo costo di un viaggio</h1>
+    </header>
+
+    <main class="maindiv">
+        <form>
+            <h2>Inserimento dati</h2>
+
+            <div class="riga-form">
+                <label for="chilometri">Km percorsi:</label>
+                <div class="input">
+                    <input type="number" id="chilometri" name="chilometri">
+                    <span class="unita">km</span>
+                </div>
+            </div>
+
+            <div class="riga-form">
+                <label for="prezzo">Prezzo carburante (per km):</label>
+                <div class="input">
+                    <input type="number" id="prezzo" name="prezzo">
+                    <span class="unita">eur</span>
+                </div>
+            </div>
+
+            <p class="risultato">Costo totale: <span id="costo">0</span> eur</p>
+
+            <div class="pulsanti">
+                <button type="button" class="pulsante" onclick="CalcolaAndata()">Calcola andata</button>
+                <button type="button" class="pulsante" onclick="CalcolaAndataERitorno()">Calcola andata e ritorno</button>
+            </div>
+        </form>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>

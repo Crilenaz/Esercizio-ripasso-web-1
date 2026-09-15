@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+.titolo {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.titolo h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.maindiv {
+  max-width: 720px;
+  margin: 1.5rem auto;
+  border: 4px solid rgb(0, 60, 16);
+  border-radius: 30px;
+  padding: 1.25rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+form h2 {
+  margin-top: 0;
+}
+
+.riga-form {
+  display: grid;
+  grid-template-columns: 38% 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.75rem 0;
+}
+
+.riga-form label {
+  min-width: 120px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 1 auto;
+  width: auto;
+}
+
+.input input {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.unita {
+  color: #ccc;
+}
+
+.risultato {
+  text-align: left;
+  margin-left: 17rem;
+  font-weight: 600;
+  color: rgb(5, 237, 5);
+}
+
+.pulsanti {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.pulsante {
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+  background: #222;
+  color: #fff;
+}
+
+.pulsante:hover{
+  color: white;
+  background-color: rgb(4, 255, 4);
+}
+
+.pulsante:active{
+  background-color: rgb(4, 80, 4);
+}
